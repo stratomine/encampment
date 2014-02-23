@@ -1,0 +1,12 @@
+{
+	"modinfoversion": "2",
+	"modlist": [{
+		"modid": "com.stratomine.encampment",
+		"name": "Encampment",
+		"description": "Adds equipment for temporary camps and bases.",
+		"version": "0.0.1",
+		"mcversion": "1.6.4",
+		"url": "https://github.com/stratomine/encampment",
+		"authors": ["Raws"]
+	}]
+}
