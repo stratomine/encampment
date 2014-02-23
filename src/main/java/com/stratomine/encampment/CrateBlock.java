@@ -16,6 +16,7 @@ public class CrateBlock extends BlockContainer {
 	private static final CreativeTabs CREATIVE_TAB = CreativeTabs.tabDecorations;
 	private static final float HARDNESS = 2.5F;
 	private static final Material MATERIAL = Material.wood;
+	private static final float RESISTANCE = 8F;
 	private static final StepSound STEP_SOUND = Block.soundWoodFootstep;
 	private static final String NAME = "com.stratomine.encampment.crate";
 
@@ -24,6 +25,7 @@ public class CrateBlock extends BlockContainer {
 
 		setCreativeTab(CREATIVE_TAB);
 		setHardness(HARDNESS);
+		setResistance(RESISTANCE);
 		setStepSound(STEP_SOUND);
 		setTextureName(EncampmentMod.getTextureName("crate"));
 		setUnlocalizedName(NAME);
