@@ -1,6 +1,7 @@
 package com.stratomine.encampment;
 
 import net.minecraft.block.Block;
+import net.minecraft.util.ResourceLocation;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -20,7 +21,11 @@ public class EncampmentMod {
 	}
 
 	private void registerBlocks() {
-		CrateBlock.register(crateBlock);
+		CrateBlock.register(this, crateBlock);
+	}
+
+	protected static ResourceLocation getResourceLocation(String resourcePath) {
+		return new ResourceLocation("com.stratomine.encampment", resourcePath);
 	}
 
 	protected static String getTextureName(String textureName) {
